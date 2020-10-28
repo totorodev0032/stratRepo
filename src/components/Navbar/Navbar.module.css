@@ -1,0 +1,46 @@
+.nav_parent {
+    display:flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_parent .nav_wrapper {
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+
+.nav_parent .nav_wrapper .logo_container {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    color: white;
+}
+
+.nav_parent .nav_wrapper .nav_container {
+    display: flex;
+    width: 35%;
+    margin-left: auto;
+    height: 100%;
+    /* background-color: white; */
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav_parent .nav_wrapper .nav_container .login_wrapper {
+    display: flex;
+    width: 120px;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    background-color: #0064D1;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}

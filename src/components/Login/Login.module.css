@@ -1,0 +1,20 @@
+.login_container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 250, 253, 0.5);
+}
+
+.login_container .login_box {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: white;
+    /* background-color: aliceblue; */
+    -webkit-box-shadow: 3px 2px 35px -29px rgba(211,0,98,0.3);
+-moz-box-shadow: 3px 2px 35px -29px rgba(211,0,98,0.3);
+box-shadow: 3px 2px 35px -29px rgba(211,0,98,0.3)
+}
