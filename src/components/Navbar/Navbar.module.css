@@ -33,10 +33,10 @@
     font-weight: 400;
 }
 
-.nav_parent .nav_wrapper .nav_container .login_wrapper {
+.login_wrapper {
     display: flex;
     width: 120px;
-    height: 55%;
+    height: 40px;
     justify-content: center;
     align-items: center;
     background-color: #0064D1;
