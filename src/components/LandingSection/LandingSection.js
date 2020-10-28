@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import styles from './LandingSection.module.css';
 
@@ -14,7 +15,7 @@ const LandingSection = () => {
                         <p className = {styles.text}>mus mauris vitae ultricies leo integer malesuad nunc vel risus</p>
                         <div className = {styles.input_section}>
                             <input type = "text" placeholder = "Enter Your Email" />
-                            <button>Sign Up</button>
+                           <button>Sign Up</button>
                         </div>
                     </div>
                 </div>

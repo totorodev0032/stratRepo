@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './Login.module.css';
 
 const Login = () => {
@@ -13,7 +14,7 @@ const Login = () => {
                         <input text = "type" placeholder =" Enter Your Email "  />
                         <input text = "type" placeholder =" Password "  />
                         <button>Login</button>
-                        <p>New here? Signup</p>
+                        <p>New here? <span> <Link to = '/register'>Signup</Link></span> </p>
                     </div>
                 </div>
             </div>
