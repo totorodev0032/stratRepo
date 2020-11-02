@@ -1,62 +1,33 @@
-import React from 'react';
-import {NavLink } from 'react-router-dom';
+import React, {useState} from 'react';
 import styles from './Dashboard.module.css';
-import * as Unicons from '@iconscout/react-unicons';
+import FriendPage from '../../pages/FriendPage/FriendPage';
+import StratPage from '../../pages/StratPage/StratPage';
+import Nav from './Nav';
 
-const Dashboard = () => {
-    return (
-        <>
-           <div className = {styles.dashboard_wrapper}>
+class Dashboard extends React.Component {
+  
+   
+    
+    render() {
+        let active = <FriendPage/>
+        
+            
+        return (
+            <>
+               <div className = {styles.dashboard_wrapper}>
                <div className = {styles.nav_wrapper}>
-                    <div className = {styles.logo}>
-                        <h3>StratRepo</h3>
-                    </div>
-                    
-                    <div className = {styles.nav_area}>
-                    <NavLink to = '/' style = {{ textDecoration:'none', color:'black' }}>
-                        <div className = {styles.nav_element}>
-                            <Unicons.UilHome/>
-                            <p>Strat</p>
+                   <Nav/>
+                </div>
+                
+                   <div className = {styles.section_wrapper}>
+                        <div className = {styles.friend_container}>
+                            {active}
                         </div>
-                    </NavLink>
-
-
-                     
-                     <NavLink to = '/' style = {{ textDecoration:'none', color:'black' }}>
-                         <div className = {styles.nav_element}>
-                            <Unicons.UilUserCheck />
-                            <p>Friends</p>
-                        </div>
-                    </NavLink>
-                    
-                    <NavLink to = '/' style = {{ textDecoration:'none', color:'black' }}>
-                        <div className = {styles.nav_element}>
-                            <Unicons.UilUsersAlt />
-                            <p>Teams</p>
-                        </div>
-                    </NavLink>
-                    
-                    <NavLink to = '/' style = {{ textDecoration:'none', color:'black' }}>
-                        <div className = {styles.nav_element}>
-                            <Unicons.UilUser />
-                            <p>Profile</p>
-                        </div>
-                    </NavLink>
-
-                    <NavLink to = '/' style = {{ textDecoration:'none', color:'black',marginTop:'auto' }}>
-                        <div className = {styles.nav_element} >
-                            <Unicons.UilSignout/>
-                            <p>Logout</p>
-                        </div>
-                    </NavLink>
-                    </div>
-               </div>
-               <div className = {styles.section_wrapper}>
-
-               </div>
-           </div> 
-        </>
-    )
+                   </div>
+               </div> 
+            </>
+        )
+    }
 }
 
 export default Dashboard
