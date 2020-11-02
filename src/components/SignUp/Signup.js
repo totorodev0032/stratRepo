@@ -8,7 +8,7 @@ const Signup = () => {
             <div className = {styles.signup_box}>
                 <div className = {styles.content_wrapper}>
                     <div className = {styles.up}>
-                        <p> StratRepo </p>
+                      <Link to = '/' style = {{textDecoration:'none'}}><p> StratRepo </p></Link>  
                     </div>
                     <div className = {styles.down}>
                         <input text = "type" placeholder =" User_name "  />

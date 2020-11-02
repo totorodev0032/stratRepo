@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import styles from './LandingSection.module.css';
+import LandingImg from '../../assets/landingImg.png';
 
 const LandingSection = () => {
     return (
@@ -20,7 +21,7 @@ const LandingSection = () => {
                     </div>
                 </div>
                 <div className = {styles.right}>
-
+                    <img src = {LandingImg} />
                 </div>
             </div>
           </div>  

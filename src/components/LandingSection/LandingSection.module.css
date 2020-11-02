@@ -104,3 +104,9 @@
     align-items: center;
     height: 100%;
 }
+
+.main_container .parent_content .right img {
+    height: 50%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+}
